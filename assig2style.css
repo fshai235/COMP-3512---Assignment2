@@ -1,0 +1,35 @@
+* {
+    font-family: "Inter", sans-serif;
+    padding: 1%;
+    
+}
+
+html{
+   border: 2px rgb(0, 4, 8); 
+   background-color: aliceblue;
+}
+
+header, footer{
+    background-color: rgba(93, 2, 190, 0.223);
+    text-align: center;
+}
+ 
+#forBrowse{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productimg {
+   background: black;
+   color: white;
+   float: right;
+   width: 10%;
+   height: 10%;
+   border-radius: 5px;
+}
+
+#prod {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
