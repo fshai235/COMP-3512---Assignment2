@@ -15,9 +15,14 @@ footer {
     text-align: center;
 }
 
+header p button{
+    background-color: rgba(197, 196, 255, 0.581);
+    border-style: hidden;
+}
+
 #headerView,
 #forBrowse,
-#prod {
+#prod, #shipSumm, #department {
     display: flex;
 }
 
@@ -30,9 +35,13 @@ footer {
     text-align: left;
 }
 
-#cart {
+#CART {
     justify-self: right;
     text-align: right;
+}
+
+#cartInfo{
+    border-style: hidden;
 }
 
 #accordion {
@@ -53,6 +62,10 @@ footer {
     display: block;
 }
 
+#departments{
+    background-color: rgba(208, 204, 213, 0.223);
+}
+
  #star1,
 #star2,
 #star3,
@@ -63,7 +76,7 @@ footer {
    padding: 3px;
 }
 
-#productimg {
+.productimg {
     background: black;
     color: white;
     float: right;
@@ -72,9 +85,19 @@ footer {
     border-radius: 5px;
 }
 
-#prod {
+#prod, #department {
     list-style-type: none;
     /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#checkoutButton, #ADD{
+    border-radius: 10%;
+    background-color: rgba(63, 179, 192, 0.323);
+    
+}
+
+#toaster{
+    background-color: rgba(95, 158, 160, 0.488);
 }

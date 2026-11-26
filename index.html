@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="assig2style.css">
-    <!-- <script src="assig1.js" type="module"></script> -->
     <script src="assign2.js" type="module"></script>
 
 </head>
@@ -12,21 +11,48 @@
     <header>
         <article id="headerView">
             <!-- for logo -->
-            <p id="logo">LOGO!</p> 
-            <p><a href="#mainView" id="HOME">Home</a> | <a href="#mainView" id="BROWSE">Browse</a> | <a href="#mainView" id="ABOUT">About</a></p>
-            <p id="cart">Cart 0</p>
-            
+            <p><a href="#mainView" id="logo" >LOGO!</a></p>
+            <p><button href="#mainView" id="HOME"><b>Home</b></button> | <button href="#mainView"
+                    id="BROWSE"><b>Browse</b></button> | <button id="ABOUT" command="show-modal"
+                    commandfor="aboutDialog"><b>About</b></button></p>
+
+            <dialog id="aboutDialog">
+                <h2>About This Webpage</h2>
+                <div id="aboutInfo">
+                    <p>This is a mock webpage created for an academic project in a Web Development course. All base
+                        coding was comepleted in Visual Studio Code and tested using the Integrated Browser view</p>
+                    <p><a href="https://github.com/fshai235/COMP-3512---Assignment2.git">Github Repository</a></p>
+                    <p>Credits: ???</p>
+                </div>
+                <button commandfor="aboutDialog" command="close">X</button>
+            </dialog>
+
+            <p id="CART">Cart</p>
+            <div id="cartCount">0</div>
+
         </article>
     </header>
     <main>
-        <h2></h2>
+        <div id="toaster" class="hidden"></div>
+        <h2><i>Above and Beyond</i></h2>
         <article id="mainView">
+            <section class="visible" id="AnB">
+                Welcome to<i>Above and Beyond</i>,where you can find a plethora of products! Look above lavish furniture,
+            to beyond raw chicken, as you browse to your heart's content to fill your empty 
+            <br>
+            Head on over to the Home page to view our featured products, or to the Browse section to view our full
+            catalogue. Enjoy your shopping!
+            </section>
+            
         </article>
+
     </main>
+
     <footer>
         <article id="footerView">
-            <!-- put link later -->
-            <p><a href = "">Github Repository</a></p>
+            <p>&copy Fatima Shaik 2026:<a href="https://github.com/fshai235/COMP-3512---Assignment2.git">Github
+                    Repository</a></p>
+
         </article>
     </footer>
 </body>
